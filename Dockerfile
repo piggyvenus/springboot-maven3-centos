@@ -33,5 +33,6 @@ COPY ./s2i/bin/ $STI_SCRIPTS_PATH
 RUN chown -R 1001:0 /opt/app-root
 USER 1001
 
+ENV FIXME yes
 # Set the default CMD to print the usage of the language image
 CMD $STI_SCRIPTS_PATH/usage
